@@ -7,7 +7,7 @@ copyright = '2021, Graziella'
 author = 'Graziella'
 
 release = '0.1'
-version = '0.1.0'
+version = '{{gitstamp}}
 
 # -- General configuration
 
@@ -17,7 +17,11 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx_gitstamp',
 ]
+
+# Date format for git timestamps
+gitstamp_fmt = "%b %d, %Y"
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
@@ -29,7 +33,7 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
+# html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
