@@ -7,7 +7,7 @@ copyright = '2021, Graziella'
 author = 'Graziella'
 
 release = '0.1'
-version = '{{gitstamp}}
+version = '{{gitstamp}}'
 
 # -- General configuration
 
